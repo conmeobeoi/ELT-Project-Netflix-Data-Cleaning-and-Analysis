@@ -3,8 +3,8 @@
 
 - [Introduction](#introduction)
 - [Project Overview](#project-overview)
-- [Steps Involved](#steps-involved)
 - [Dataset](#dataset)
+- [Steps Involved](#steps-involved)
 - [Data Cleaning and Transformation Tasks](#data-cleaning-and-transformation-tasks)
 - [SQL Analysis](#SQL-Analysis)
 - [How to Run the Project](#how-to-run-the-project)
@@ -17,6 +17,10 @@ This project demonstrates an ELT (Extract, Load, and Transform) process for clea
 ## Project Overview
 ![Alt Text](ELT.png) <br>
 
+## Dataset
+
+This dataset consists of listings of all the movies and tv shows available on Netflix, along with details such as - cast, directors, ratings, release year, duration, etc.
+
 ### Steps Involved:
 - **Extract**: Download the Netflix Movies and TV Shows dataset using Python.
   
@@ -25,10 +29,6 @@ This project demonstrates an ELT (Extract, Load, and Transform) process for clea
 - **Transform**: Perform data cleaning, modeling, and transformations on the raw data. Load the transformed data into the Final Staging Layer.
   
 - **Analyze**: Conduct data analysis using SQL to answer 5 specific questions.
-  
-## Dataset
-
-This dataset consists of listings of all the movies and tv shows available on Netflix, along with details such as - cast, directors, ratings, release year, duration, etc.
 
 ## Data Cleaning and Transformation Tasks
 
