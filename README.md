@@ -71,7 +71,8 @@ for directors who have created tv shows and movies both.
 **4. Transform Data**:
 - Execute SQL scripts for data cleaning and transformation.
 
-**5. Analyze Data**: Run the SQL queries to answer the specified questions.
+**5. Analyze Data**: 
+- Run the SQL queries to answer the specified questions.
 
 ## Contributing
 
