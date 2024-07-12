@@ -3,11 +3,11 @@
 
 - [Introduction](#introduction)
 - [Project Overview](#project-overview)
-- [Dataset](#Dataset)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Steps Involved](#steps-involved)
+- [Dataset](#dataset)
+- [Data Cleaning and Transformation Tasks](#data-cleaning-and-transformation-tasks)
+- [SQL Analysis](#SQL-Analysis)
+- [How to Run the Project](#how-to-run-the-project)
 - [Contributing](#contributing)
 
 ## Introduction
@@ -63,21 +63,16 @@ for directors who have created tv shows and movies both.
 - Ensure you have Python and a SQL database installed.
 - Install required Python libraries using pip install -r requirements.txt.
 
-- **Question 2**: Which country has highest number of comedy movies.
+**2. Download Dataset**: 
+- Use the provided Python script to download the dataset.
+
+**3. Load Data**:
+- Load the raw data into the SQL database.
   
-- **Question 3**: For each year (as per date added to netflix), which director has maximum number of movies released.
-  
-- **Question 4**: What is average duration of movies in each genre.
-  
-- **Question 5**: ind the list of directors who have created horror and comedy movies both.
+**4. Transform Data**:
+- Execute SQL scripts for data cleaning and transformation.
 
-## Usage
-
-1. To use this flood detection system, follow the steps mentioned in the project documentation or Jupyter notebooks if provided.
-
-2. Customize the model according to your specific use case and data sources.
-
-3. Run the file on kaggle.
+**5. Analyze Data**: Run the SQL queries to answer the specified questions.
 
 ## Contributing
 
