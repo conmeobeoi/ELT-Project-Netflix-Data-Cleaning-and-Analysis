@@ -15,8 +15,6 @@
 This project demonstrates an ELT (Extract, Load, and Transform) process for cleaning and analyzing Netflix Movies and TV Shows data. The goal is to download the dataset, clean and transform the data, and perform SQL analysis to answer specific questions.
 
 ## Project Overview
-
-METHODOLOGY: <br>
 ![Alt Text](ELT.png) <br>
 In this project, we implement a system using a multimodal architecture for detecting flood from social media posts, specifically images and text. The system uses various data sources, such as satellite images, weather data, and other relevant information, to predict and monitor potential flood events. The goal is to create an accurate and reliable system for real-time flood detection.
 
