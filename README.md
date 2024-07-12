@@ -59,9 +59,9 @@ for directors who have created tv shows and movies both.
 
 ## How to Run the Project
 
-- **Prerequisites**:
-For each director count the no of movies and tv shows created by them in separate columns 
-for directors who have created tv shows and movies both.
+ **1. Prerequisites**:
+- Ensure you have Python and a SQL database installed.
+- Install required Python libraries using pip install -r requirements.txt.
 
 - **Question 2**: Which country has highest number of comedy movies.
   
