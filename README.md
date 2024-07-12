@@ -16,52 +16,60 @@ This project demonstrates an ELT (Extract, Load, and Transform) process for clea
 
 ## Project Overview
 ![Alt Text](ELT.png) <br>
-In this project, we implement a system using a multimodal architecture for detecting flood from social media posts, specifically images and text. The system uses various data sources, such as satellite images, weather data, and other relevant information, to predict and monitor potential flood events. The goal is to create an accurate and reliable system for real-time flood detection.
 
+### Steps Involved:
+- **Extract**: Download the Netflix Movies and TV Shows dataset using Python.
+  
+- **Load**: Load the raw data into the Raw Data Layer using SQL.
+  
+- **Transform**: Perform data cleaning, modeling, and transformations on the raw data. Load the transformed data into the Final Staging Layer.
+  
+- **Analyze**: Conduct data analysis using SQL to answer 5 specific questions.
+  
 ## Dataset
 
-The dataset used in this project is extracted from one task related to flood events: DIRSM (Disaster Image Recognition from Social Media) from the 2017 Multimedia Satellite Task. The DIRSM dataset includes images and metadata from the YFCC100M dataset, shared under Creative Commons licenses that allow redistribution. Each image in this dataset belongs to a single user to ensure the uniqueness of the samples. The images are classified into two categories: (1) Showing evidence of a flooding event and (2) Showing no evidence of a flooding event. This dataset comes with additional metadata and a development set of 5,280 image and a test set consisting of 1,320 images along with their metadata. This dataset is a crucial resource for developing and testing machine learning models in flood detection applications, providing the necessary tools to analyze and predict flood events based on images and satellite data. 
+This dataset consists of listings of all the movies and tv shows available on Netflix, along with details such as - cast, directors, ratings, release year, duration, etc.
 
-## Features
+## Data Cleaning and Transformation Tasks
 
-- **Input Image and Tweet**: We split the development set into 90% for training and 10% for validation.
+- **Handling Foreign Characters**: Ensure all foreign characters in the dataset are correctly encoded and standardized.
 
-- **Image Preprocessing**: All images are resized and preprocessed by scaling and normalizing pixel values. Various augmentation techniques are applied, including random horizontal flips, color jitter, and random rotations.
-
-- **Visual Feature Extractor**: We use transfer learning with pre-trained models: ResNet50, DenseNet-201, EfficientNetB3
+- **Removing Duplicates**: Identify and remove any duplicate entries to ensure data integrity.
   
-- **Textual Feature Extractor**: BERT, XLNet
+- **Data Type Conversion**: Convert data types as necessary for accurate data analysis.
   
-- **Choosing Best-Performed CNN Model**: Models are trained with identical hyperparameters, and the one with the highest accuracy (EfficientNetB3) is selected.
-
-- **Selecting Best-Performed Language Model** : BERT outperforms XLNet in this step and is chosen for the next phase.
-
-- **Fusion and Classification**: Outputs from both the visual and textual parts are combined using late fusion to form a shared representation.
+- **Identify and Populate Missing Values**: Detect missing values and use appropriate methods to populate them.
   
-- **Evaluate the Final Model**: Performance is evaluated using accuracy, precision, recall, and weighted F1-score on validation set to assess and compare the model's effectiveness across different classes.
+- **New Dimension Table for Countries**: Create a new dimension table for countries and list relevant data for comprehensive analysis.
+
+## SQL Analysis
+
+Using the transformed data in the Final Staging Layer, perform SQL queries to answer the following five questions:
+
+- **Question 1**: For each director count the no of movies and tv shows created by them in separate columns 
+for directors who have created tv shows and movies both.
+
+- **Question 2**: Which country has highest number of comedy movies.
   
-- **Result:** Create a csv file to store the result from model.
+- **Question 3**: For each year (as per date added to netflix), which director has maximum number of movies released.
+  
+- **Question 4**: What is average duration of movies in each genre.
+  
+- **Question 5**: ind the list of directors who have created horror and comedy movies both.
 
-## Prerequisites
+## How to Run the Project
 
-Before you begin, ensure you have met the following requirements:
+- **Prerequisites**:
+For each director count the no of movies and tv shows created by them in separate columns 
+for directors who have created tv shows and movies both.
 
-- Python 3.6+
-- Pytorch
-- NumPy
-- PIL (for image processing)
-- Additional libraries as specified in the project's requirements file
-
-## Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/miahh1103/Flood-detection-from-Social-Media-Posts-Using-Multimodal-Deep-Learning.git
-   ```
-
-2. Run it on the kaggle plattform:
-   - Because of the problem about the device, i decide to run it on plattform for ML/DL.
+- **Question 2**: Which country has highest number of comedy movies.
+  
+- **Question 3**: For each year (as per date added to netflix), which director has maximum number of movies released.
+  
+- **Question 4**: What is average duration of movies in each genre.
+  
+- **Question 5**: ind the list of directors who have created horror and comedy movies both.
 
 ## Usage
 
