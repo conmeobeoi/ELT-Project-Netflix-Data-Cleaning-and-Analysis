@@ -17,7 +17,7 @@ This project demonstrates an ELT (Extract, Load, and Transform) process for clea
 ## Project Overview
 
 METHODOLOGY: <br>
-![Alt Text](Images/ELT.png) <br>
+![Alt Text](ELT.png) <br>
 In this project, we implement a system using a multimodal architecture for detecting flood from social media posts, specifically images and text. The system uses various data sources, such as satellite images, weather data, and other relevant information, to predict and monitor potential flood events. The goal is to create an accurate and reliable system for real-time flood detection.
 
 ## Dataset
