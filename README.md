@@ -54,7 +54,7 @@ for directors who have created tv shows and movies both.
   
 - **Question 4**: What is average duration of movies in each genre.
   
-- **Question 5**: ind the list of directors who have created horror and comedy movies both.
+- **Question 5**: Find the list of directors who have created horror and comedy movies both.
 
 ## How to Run the Project
 
