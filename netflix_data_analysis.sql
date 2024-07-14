@@ -141,5 +141,4 @@ select * from netflix_genre where show_id in
 (select show_id from netflix_directors where director='Steve Brill')
 order by genre
 
-Steve Brill	5	1
 
