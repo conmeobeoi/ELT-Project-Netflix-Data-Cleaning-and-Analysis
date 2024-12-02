@@ -1,6 +1,3 @@
-
-https://drive.google.com/drive/folders/18Yw3z6yNAlS-6wMPFRse7IKiA4MT3642?fbclid=IwZXh0bgNhZW0CMTAAAR36kVNhefya1D3raHpuCKcmi27FofIFPN2t1dw819ujH-ifWIdY7XGYcg8_aem_VkFOwkDZNPKySeSIzkIY7g
-https://drive.google.com/file/d/1eZUbV0zxx-oClWccJPOABLcc569wONmk/view?fbclid=IwY2xjawG13QJleHRuA2FlbQIxMAABHWqieOHaMNXsMJTF65Y7McGsM6U7BYWtPlPV9KhFIWU6UMK0ELKwps2alA_aem_DQfJ1PBAHVvcHMhj4ReQVA
 # ELT Project: Netflix-Data-Cleaning-and-Analysis
 ## Table of Contents
 
